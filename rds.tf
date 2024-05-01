@@ -85,6 +85,7 @@ resource "aws_db_instance" "mysql_standalone" {
   maintenance_window         = "Mon:05:00-Mon:08:00"
   auto_minor_version_upgrade = false
 
+  # 費用がかからないようにちょいちょい消すので、保護はかけない
   deletion_protection = false
   skip_final_snapshot = true
 
