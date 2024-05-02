@@ -9,6 +9,12 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+    bucket  = "tastylog-tfstate-bucket-kamakari"
+    key     = "tastylog-dev.tfstate"
+    region  = "ap-northeast-1"
+    profile = "terraform"
+  }
 }
 
 # --------------------------------------------
