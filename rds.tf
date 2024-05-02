@@ -43,7 +43,7 @@ resource "aws_db_subnet_group" "mysql_standalone_subnetgroup" {
 }
 
 # --------------------------------------------
-# RDS instance
+# RDS password
 # --------------------------------------------
 resource "random_string" "db_password" {
   length  = 16
